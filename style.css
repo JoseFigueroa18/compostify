@@ -1,0 +1,183 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+    margin: 0 auto 0.5rem;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    padding: 2rem 1.5rem;
+}
+
+/* Tarjetas generales */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos de formularios y campos de entrada */
+input[type="file"] {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.image-preview {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Estilos de secciones específicas */
+
+/* Sección de historial */
+.history-upload {
+    background-color: #f4f4f9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.history-upload h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.history-list h2 {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.history-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.history-card p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* Sección de perfil */
+.profile {
+    text-align: center;
+    background-color: #f9f9fc;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.profile-details h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-details p {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Pie de página */
+footer {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    .card, .profile, .history-upload, .history-list {
+        padding: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+}
