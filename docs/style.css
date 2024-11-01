@@ -96,13 +96,26 @@ button:hover {
 /* Estilos de secciones específicas */
 
 /* Sección de historial */
-.history-upload {
-    background-color: #f4f4f9;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    text-align: center;
+/* Imagen dentro de las tarjetas de historial */
+
+.history-card .history-image {
+    width: 100%; /* Se adapta al ancho de la tarjeta */
+    max-height: 150px; /* Limita la altura para que no ocupe demasiado espacio */
+    object-fit: cover; /* Recorta la imagen para adaptarse sin distorsionarse */
+    border-radius: 8px; /* Bordes redondeados para cohesión con la tarjeta */
+    margin-bottom: 1rem; /* Espacio debajo de la imagen */
 }
+
+
+/* Imagen dentro de las tarjetas de historial */
+.history-card .history-image {
+    width: 100%; /* Se adapta al ancho de la tarjeta */
+    max-height: 150px; /* Limita la altura para que no ocupe demasiado espacio */
+    object-fit: contain; /* Ajusta la imagen para que se muestre completamente sin distorsionarse */
+    border-radius: 8px; /* Bordes redondeados para cohesión con la tarjeta */
+    margin-bottom: 1rem; /* Espacio debajo de la imagen */
+}
+
 
 .history-upload h2 {
     color: #333;
